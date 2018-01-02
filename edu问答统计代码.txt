@@ -10,4 +10,3 @@
 <script id="statjs" src="http://static.kuaiji.com/js/stat.js?catid=0" type="text/javascript" charset="utf-8"></script>
 
 	
-123123123
