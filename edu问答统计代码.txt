@@ -1,0 +1,12 @@
+将下面两段统计代码放置以下位置：
+	放置edu下属的全部页面包括首页，列表页，详情页：
+	edu.kuaiji.com/*
+	
+一、问答频道统计代码：
+<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1269614183'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "w.cnzz.com/c.php%3Fid%3D1269614183' type='text/javascript'%3E%3C/script%3E"));</script>
+	
+	
+二、全站统计代码：
+<script id="statjs" src="http://static.kuaiji.com/js/stat.js?catid=0" type="text/javascript" charset="utf-8"></script>
+
+	
