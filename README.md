@@ -7,6 +7,3 @@ list-default-sticky.php
 
 #面包屑和相关推荐
 single.php
-
-# 新増的带nofollow tag的函数
-function.php
