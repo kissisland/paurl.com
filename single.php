@@ -33,6 +33,7 @@ get_header();?>
                                 <a class="nickname" rel="nofollow noopener" href="<?php echo $author_url; ?>"><?php echo $author_name;?></a>
                                 <span class="dot">•</span>
                                 <span><?php echo format_date(get_post_time( 'U', false, $post ));?></span>
+								
                                 
                                 <?php if(function_exists('the_views')) {
                                     $views = intval(get_post_meta($post->ID, 'views', true));
@@ -40,6 +41,12 @@ get_header();?>
                                     <span class="dot">•</span>
                                     <span>阅读 <?php echo $views; ?></span>
                                 <?php } ?>
+								
+								<!-- 新增点赞数调用
+								<span class="dot">•</span>
+                                <?php $likes = get_post_meta($post->ID, 'wpcom_likes', true); echo $likes?$likes:0;?>
+								<span>人点赞</span>
+								-->
                             </div>
                         </div>
                         <?php do_action('wpcom_echo_ad', 'ad_single_1');?>
