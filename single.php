@@ -1,6 +1,6 @@
 1、添加了面包屑导航
 2、tag标签加了nofollow
-3、相关推荐位置的调整
+3、把目录做了注释
 <?php
 global $options,$current_user;
 $dashang_display = isset($options['dashang_display']) ? $options['dashang_display'] : 0;
@@ -12,9 +12,11 @@ get_header();?>
                 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                     <div class="entry">
                         <div class="entry-head">
+							<!--  新增的面包屑导航
 							<div class="breadcrumb entry-info">
 							当前位置：<a href="http://www.paurl.com">互联网运营</a> > <?php the_category( ', ', '', false ); ?> > <?php the_title();?>
 							</div>
+							-->
                             <h1 class="entry-title"><?php the_title();?></h1>
                             <div class="entry-info">
                                 <?php
@@ -52,7 +54,9 @@ get_header();?>
                             <?php wpcom_post_copyright();?>
                         </div>
                         <div class="entry-footer">
+							<!-- 新增的nofollow tag标签
                             <div class="entry-tag"><?php cx_tags();?></div>
+							-->
                             <div class="entry-action">
                                 <div class="btn-zan" data-id="<?php the_ID(); ?>"><i class="fa fa-thumbs-up"></i> <?php _e( 'Like', 'wpcom' );?> <span class="entry-action-num">(<?php $likes = get_post_meta($post->ID, 'wpcom_likes', true); echo $likes?$likes:0;?>)</span></div>
 
