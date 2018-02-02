@@ -15,3 +15,5 @@ single.php
 ##4、新增nofollow的tag标签调用
 
 #functions新增notfollow的tag函数
+
+#header.php新增对登陆，注册 nofollow标签
