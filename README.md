@@ -7,13 +7,13 @@ list-defaul.php
 ##首页
 list-default-sticky.php
 
-#面包屑和相关推荐
+# 面包屑和相关推荐
 single.php
-##1、修改nickname的nofollow
-##2、新增面包屑导航
-##3、删除目录调用
-##4、新增nofollow的tag标签调用
+## 1、修改nickname的nofollow
+## 2、新增面包屑导航
+## 3、删除目录调用
+## 4、新增nofollow的tag标签调用
 
-#functions新增notfollow的tag函数
+# functions新增notfollow的tag函数
 
-#header.php新增对登陆，注册 nofollow标签
+# header.php新增对登陆，注册 nofollow标签
